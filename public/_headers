@@ -1,0 +1,7 @@
+/catalog/*
+  Cache-Control: public, max-age=3600
+/sw.js
+  Cache-Control: no-cache
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer

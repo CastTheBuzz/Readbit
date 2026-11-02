@@ -1,0 +1,8 @@
+node_modules/
+.wrangler/
+.dev.vars
+public/catalog/
+setup/cache/
+setup/state.json
+READBIT-LINK.txt
+tests/output/

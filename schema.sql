@@ -1,0 +1,5 @@
+-- Readbit database. Safe to run again: only creates what's missing.
+CREATE TABLE IF NOT EXISTS sessions (id TEXT PRIMARY KEY, created INTEGER NOT NULL, seen INTEGER NOT NULL, agent TEXT);
+CREATE TABLE IF NOT EXISTS state (k TEXT PRIMARY KEY, v TEXT, u INTEGER NOT NULL, s INTEGER NOT NULL);
+CREATE INDEX IF NOT EXISTS state_s ON state(s);
+CREATE TABLE IF NOT EXISTS attempts (ip TEXT NOT NULL, t INTEGER NOT NULL);

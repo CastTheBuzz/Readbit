@@ -1,0 +1,12 @@
+{
+  "name": "readbit",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-10-01",
+  "assets": { "directory": "./public", "binding": "ASSETS" },
+  "d1_databases": [
+    // filled in automatically by setup/setup.mjs (deploy.bat)
+    { "binding": "DB", "database_name": "readbit", "database_id": "REPLACED_BY_SETUP" }
+  ],
+  "vars": { "GUTENBERG": "https://www.gutenberg.org", "LIBRIVOX": "https://librivox.org" },
+  "workers_dev": true
+}

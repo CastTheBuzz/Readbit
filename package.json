@@ -1,0 +1,19 @@
+{
+  "name": "readbit",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Phone-first reading app for ~68,000 public-domain books: recommendations, a real e-reader, free audiobooks, offline reading. Cloudflare Workers + D1.",
+  "dependencies": {
+    "unbzip2-stream": "^1.4.3"
+  },
+  "devDependencies": {
+    "wrangler": "^4.156.0"
+  },
+  "scripts": {
+    "deploy": "node setup/setup.mjs",
+    "catalog": "node setup/build-catalog.mjs",
+    "test": "bash tests/run.sh"
+  },
+  "license": "MIT"
+}
